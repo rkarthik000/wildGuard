@@ -178,7 +178,7 @@ const runDetection = async (file) => {
     try {
       const formData = new FormData();
 formData.append("file", file);
-const response = await fetch("http://localhost:8000/api/detect-vision", {
+const response = await fetch("https://wildbackend-production.up.railway.app/api/detect-vision", {
   method: "POST",
   body: formData,
 });
